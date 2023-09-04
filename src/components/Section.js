@@ -66,6 +66,9 @@ margin: 8px;
  
 `
 const Rightbutton = styled(LeftButton)`
+    background: white;
+    opacity: 0.65;
+    color: black;
 `
 
 const DownArrow = styled.img`
