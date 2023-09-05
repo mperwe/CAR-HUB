@@ -11,7 +11,7 @@ function Home() {
         </Container>
     )
 }
-
+ 
 export default Home
 
 const Container = styled.div`
