@@ -2,9 +2,12 @@ import React, {useState} from 'react'
 import styled from "styled-components"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { selectCars } from '../features/car/carSlice';
+import { UseSelector, useSelector } from 'react-redux';
 
 function Header() {
     const [BurgerStatus, setBurgerStatus] = useState(false);
+    const cars = useSelector(selectCars)
   return (
     <Container>
       <a>
