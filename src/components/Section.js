@@ -12,7 +12,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
             </Fade>
 
             <Buttons>
-                <Fade bottom> 
+                <Fade bottom>
                     <ButtonGroup>
                         <LeftButton>
                             {leftBtnText}
@@ -48,7 +48,6 @@ const Wrap = Styled.div`
         align-items: center; // horizontal
         background-image: ${props => `url("/images/${props.bgImage}")`}
 `
-
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;

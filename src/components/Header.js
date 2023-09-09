@@ -31,19 +31,13 @@ function Header() {
         {cars && cars.map((car, index) => (
           <a key={index} href='#'><li><a href='#'>{car}</a> </li></a>
         ))}
-
-
-        
-        <li><a href='#'>Trade-in</a> </li>
+       <li><a href='#'>Trade-in</a> </li>
         <li><a href='#'>Cybertruck</a> </li>
         <li><a href='#'>Roadster</a> </li>
-          
-
       </BurgerNav>
     </Container>
   )
 }
-
 export default Header
 
 const Container = styled.div`
@@ -57,21 +51,18 @@ const Container = styled.div`
     left: 0;
     right: 0;
     z-index: 1;
-
 `
-
 const Menu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    
-  a{
+
+    a{
       font-weight: 600;
       text-transform: uppercase;
       padding: 0 10px;
       flex-wrap: nowrap; 
-   
   }
   @media(max-width: 768px) {
       display: none
@@ -90,7 +81,6 @@ const RightMenu = styled.div`
 const CustomMenu = styled(MenuIcon)`
     cursor: pointer;
 `
-
 const BurgerNav = styled.div`
     position: fixed;
     top: 0;
@@ -114,7 +104,6 @@ const BurgerNav = styled.div`
           font-weight: 600;
         }
     }
-
 `
 const CustomClose = styled(CloseIcon)`
      cursor: pointer;
